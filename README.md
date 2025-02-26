@@ -1,5 +1,5 @@
 # E-posta Doğrulama API'si 📧
-
+[English](README.md) | [Türkçe](README_TR.md)
 Bu API, kullanıcıların e-posta adreslerini doğrulamak için kullanılan basit ve etkili bir .NET Core Web API projesidir.
 
 ## Özellikler ✨
