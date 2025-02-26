@@ -2,7 +2,9 @@
 
 [English](README.md) | [Türkçe](README_TR.md)
 
-This API is a simple and effective .NET Core Web API project used for verifying user email addresses.
+This API is a simple and effective .NET Core Web API project used for verifying user email addresses. This template is open for development and can be integrated into your own projects.
+
+> 🔍 **Note**: This API serves as a template and is open for further development. You can freely integrate and customize it for your own projects.
 
 ## Features ✨
 
