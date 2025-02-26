@@ -4,6 +4,10 @@
 
 Bu API, kullanıcıların e-posta adreslerini doğrulamak için kullanılan basit ve etkili bir .NET Core Web API projesidir.
 
+Bu API, kullanıcıların e-posta adreslerini doğrulamak için kullanılan basit ve etkili bir .NET Core Web API projesidir. Bu şablon geliştirmeye açıktır ve kendi projelerinize entegre edebilirsiniz.
+
+> 🔍 **Not**: Bu API bir şablon olarak hizmet vermektedir ve geliştirmeye açıktır. Kendi projelerinize entegre edebilir ve ihtiyaçlarınıza göre özelleştirebilirsiniz.
+
 ## Özellikler ✨
 
 - E-posta adresine 6 haneli doğrulama kodu gönderme
