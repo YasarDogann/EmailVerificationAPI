@@ -82,5 +82,5 @@ Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICEN
 
 ## İletişim 📧
 
-Sorularınız için [GitHub Issues](https://github.com/kullaniciadi/EmailVerificationAPI/issues) sayfasını kullanabilirsiniz.
+Sorularınız için yasardgn99@gmail.com
 
