@@ -1,86 +1,86 @@
-# E-posta Doğrulama API'si 📧
+# Email Verification API 📧
+
 [English](README.md) | [Türkçe](README_TR.md)
-Bu API, kullanıcıların e-posta adreslerini doğrulamak için kullanılan basit ve etkili bir .NET Core Web API projesidir.
 
-## Özellikler ✨
+This API is a simple and effective .NET Core Web API project used for verifying user email addresses.
 
-- E-posta adresine 6 haneli doğrulama kodu gönderme
-- Doğrulama kodunun geçerliliğini kontrol etme
-- 5 dakikalık kod geçerlilik süresi
-- Gmail SMTP entegrasyonu
-- Swagger UI desteği
+## Features ✨
 
-## Teknolojiler 🛠
+- Send 6-digit verification code to email address
+- Verify the validation code
+- 5-minute code validity period
+- Gmail SMTP integration
+- Swagger UI support
+
+## Technologies 🛠
 
 - .NET 8.0
-- MailKit (E-posta gönderimi için)
+- MailKit (for email sending)
 - Swagger/OpenAPI
 - Memory Cache
 
-## Kurulum 🚀
+## Installation 🚀
 
-1. Repoyu klonlayın:
+1. Clone the repository:
    ```bash
    git clone https://github.com/kullaniciadi/EmailVerificationAPI.git
    ```
 
-2. Proje dizinine gidin:
+2. Go to project directory:
    ```bash
    cd EmailVerificationAPI
    ```
 
-3. `VerificationController.cs` dosyasında Gmail bilgilerinizi güncelleyin:
+3. Update your Gmail credentials in `VerificationController.cs`:
    ```csharp
-   emailMessage.From.Add(new MailboxAddress("Destek", "sizin-mailiniz@gmail.com"));
-   await smtp.AuthenticateAsync("sizin-mailiniz@gmail.com", "uygulama-şifreniz");
+   emailMessage.From.Add(new MailboxAddress("Support", "your-email@gmail.com"));
+   await smtp.AuthenticateAsync("your-email@gmail.com", "your-app-password");
    ```
 
-4. Projeyi çalıştırın:
+4. Run the project:
    ```bash
    dotnet run
    ```
 
-## API Endpoint'leri 📝
+## API Endpoints 📝
 
-### 1. Doğrulama Kodu Gönderme
+### 1. Send Verification Code
 http
 POST /api/Verification/send-code
 Content-Type: application/json
 {
-"email": "kullanici@ornek.com"
+"email": "user@example.com"
 }
 
 
-### 2. Doğrulama Kodunu Kontrol Etme
+### 2. Verify Code
 http
 POST /api/Verification/verify-code
 Content-Type: application/json
 {
-"email": "kullanici@ornek.com",
+"email": "user@example.com",
 "code": "123456"
 }
 
 
+## Security 🔒
 
-## Güvenlik 🔒
+- Verification codes automatically expire after 5 minutes
+- Codes are removed from the system after successful verification
+- Temporary data storage using Memory Cache
 
-- Doğrulama kodları 5 dakika sonra otomatik olarak geçersiz olur
-- Başarılı doğrulama sonrası kodlar sistemden silinir
-- Memory Cache kullanılarak geçici veri depolama
+## Contributing 🤝
 
-## Katkıda Bulunma 🤝
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/newFeature`)
+3. Commit your changes (`git commit -am 'Added new feature'`)
+4. Push to the branch (`git push origin feature/newFeature`)
+5. Create a Pull Request
 
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
-5. Pull Request oluşturun
+## License 📄
 
-## Lisans 📄
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakın.
+## Contact 📧
 
-## İletişim 📧
-
-Sorularınız için yasardgn99@gmail.com
-
+For your questions, you can useyasardgn99@gmail.com
